@@ -42,7 +42,7 @@ export default function Nav() {
             style={{ color: "var(--color-accent)" }}
             className="text-xl font-bold tracking-tight hover:opacity-80 transition-opacity"
           >
-            Brett T.
+            Brett Toutkoushian
           </a>
 
           {/* Desktop Nav */}

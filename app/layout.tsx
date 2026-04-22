@@ -54,15 +54,23 @@ const shareTechMono = Share_Tech_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Brett T. — Software Engineer",
+  title: "Brett Toutkoushian — Software Engineer",
   description:
-    "CS graduate and software engineer specializing in full-stack development, distributed systems, and developer tooling. Open to new opportunities.",
-  keywords: ["software engineer", "CS graduate", "full-stack", "React", "TypeScript", "Next.js"],
-  authors: [{ name: "Brett T." }],
+    "Backend-focused software engineer with 3+ years building automation tooling, CI pipelines, and data systems in production. Based in Raleigh, NC.",
+  keywords: ["software engineer", "backend engineer", "Python", "PostgreSQL", "automation", "Raleigh NC"],
+  authors: [{ name: "Brett Toutkoushian" }],
   openGraph: {
-    title: "Brett T. — Software Engineer",
-    description: "CS graduate and software engineer. Open to new opportunities.",
+    title: "Brett Toutkoushian — Software Engineer",
+    description:
+      "Backend-focused software engineer with 3+ years building automation tooling, CI pipelines, and data systems in production.",
     type: "website",
+    siteName: "Brett Toutkoushian",
+  },
+  twitter: {
+    card: "summary",
+    title: "Brett Toutkoushian — Software Engineer",
+    description:
+      "Backend-focused software engineer with 3+ years building automation tooling, CI pipelines, and data systems in production.",
   },
 };
 
@@ -74,7 +82,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      data-theme="ivory"
+      data-theme="frost"
       className={[
         inter.variable,
         spaceGrotesk.variable,

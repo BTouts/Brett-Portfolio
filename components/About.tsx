@@ -4,12 +4,11 @@ import { motion } from "framer-motion";
 
 const skills = [
   { name: "Python", color: "#3776AB" },
-  { name: "Java", color: "#ED8B00" },
-  { name: "React", color: "#61DAFB" },
   { name: "PostgreSQL", color: "#336791" },
+  { name: "Java", color: "#ED8B00" },
   { name: "C#", color: "#239120" },
   { name: "C/C++", color: "#00599C" },
-  { name: "Django REST", color: "#092E20" },
+  { name: "Docker", color: "#2496ED" },
   { name: "RESTful APIs", color: "#FF6B6B" },
 ];
 
@@ -57,7 +56,7 @@ export default function About() {
               className="text-base sm:text-lg leading-relaxed mb-6"
               style={{ color: "var(--color-text-muted)" }}
             >
-              I&apos;m a software developer focused on backend work, automation, and the systems that manage data behind the scenes. I&apos;m currently a Software Implementation Team Lead at Prometheus Group, where I write Python tooling, automated tests, and PostgreSQL dashboards.
+              I&apos;m a backend-focused software engineer currently working as Software Implementation Team Lead at Prometheus Group, where I build the internal tooling and automated test infrastructure the team runs daily — alongside custom PostgreSQL reports and dashboards for client deployments of our ePAS software.
             </p>
             <p
               className="text-base sm:text-lg leading-relaxed"
@@ -70,7 +69,6 @@ export default function About() {
             <div className="mt-8 grid grid-cols-3 gap-4">
               {[
                 { value: "3+", label: "Yrs. Exp." },
-                { value: "5", label: "Roles" },
                 { value: "B.S.", label: "Comp. Sci." },
               ].map((stat) => (
                 <div
@@ -134,7 +132,7 @@ export default function About() {
                 className="text-sm leading-relaxed"
                 style={{ color: "var(--color-text-muted)" }}
               >
-                TensorFlow · SQL · HTML/CSS · Playwright · Git · Jenkins · Postman · Jira
+                TensorFlow · Streamlit · React · HTML/CSS · Playwright · RabbitMQ · Git · Jenkins · Postman
               </div>
             </div>
           </div>

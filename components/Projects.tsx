@@ -13,29 +13,28 @@ type Project = {
 
 const projects: Project[] = [
   {
-    name: "Ranked Albums",
-    description:
-      "A full-stack web app for ranking music albums. You can search for albums, drop them into drag-and-drop tier lists, and save your rankings. Deployed on Vercel.",
-    tech: ["React", "TypeScript", "Next.js"],
-    github: "https://github.com/BTouts/Ranked-Albums",
-    live: "https://ranked-albums.vercel.app/",
-    accent: "#61DAFB",
-  },
-  {
     name: "Internal QC Automation Tool",
     description:
-      "A Python tool I built at Prometheus Group that the implementation team uses daily to validate configuration deployments and catch regressions before they hit production.",
-    tech: ["Python", "PostgreSQL"],
+      "A Python tool I built at Prometheus Group that compares database states using psycopg and surfaces results in a Streamlit dashboard. Runs on the CI pipeline to catch regressions automatically, and used daily by the implementation team to validate DB health on upgrades and config changes.",
+    tech: ["Python", "PostgreSQL", "Streamlit", "Docker"],
     github: "#",
     accent: "#3776AB",
   },
   {
     name: "End-to-End Test Framework",
     description:
-      "An automated test suite I wrote with Playwright and C# at Prometheus Group. It gives the team repeatable end-to-end coverage for configuration deployments and runs as part of every sprint.",
+      "I wrote ~30 client-specific Playwright tests covering Prometheus Group's highly configurable ePAS app, and singlehandedly got a high-priority client's full suite running on the CI pipeline. Tests run at least once per sprint as a regression gate.",
     tech: ["C#", "Playwright"],
     github: "#",
     accent: "#239120",
+  },
+  {
+    name: "MOCI Satellite Flight Software",
+    description:
+      "Wrote telemetry software and an I2C test script for validating data transfer between satellite components, as part of UGA&apos;s Small Satellite Research Lab. Contributed through the full software lifecycle, from design reviews to hardware-in-the-loop testing.",
+    tech: ["C/C++", "Embedded Systems", "I2C"],
+    github: "#",
+    accent: "#00599C",
   },
   {
     name: "Warehouse Management Extensions",
@@ -46,12 +45,13 @@ const projects: Project[] = [
     accent: "#ED8B00",
   },
   {
-    name: "MOCI Satellite Flight Software",
+    name: "Ranked Albums",
     description:
-      "Embedded flight software for the MOCI small satellite at UGA&apos;s Small Satellite Research Lab. I worked on a large team through the full software lifecycle, from design to hardware-in-the-loop testing.",
-    tech: ["C/C++", "Embedded Systems"],
-    github: "#",
-    accent: "#00599C",
+      "A full-stack web app for ranking music albums. You can search for albums, drop them into drag-and-drop tier lists, and save your rankings. Deployed on Vercel.",
+    tech: ["React", "TypeScript", "Next.js"],
+    github: "https://github.com/BTouts/Ranked-Albums",
+    live: "https://ranked-albums.vercel.app/",
+    accent: "#61DAFB",
   },
 ];
 

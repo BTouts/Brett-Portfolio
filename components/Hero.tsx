@@ -22,30 +22,9 @@ export default function Hero() {
       <div className="absolute inset-0 frost-mesh" />
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 py-32 text-center">
-        {/* Eyebrow */}
-        <motion.div
-          custom={0}
-          variants={fadeUp}
-          initial="hidden"
-          animate="visible"
-          className="mb-4 flex items-center justify-center gap-2"
-        >
-          <span
-            className="inline-flex items-center gap-2 text-sm font-medium px-4 py-1.5 tracking-wide"
-            style={{
-              color: "var(--color-accent)",
-              backgroundColor: "transparent",
-              border: "1px solid var(--color-border)",
-              borderRadius: "var(--radius-btn, 6px)",
-            }}
-          >
-            Open to work
-          </span>
-        </motion.div>
-
         {/* Main heading */}
         <motion.div
-          custom={1}
+          custom={0}
           variants={fadeUp}
           initial="hidden"
           animate="visible"
@@ -54,13 +33,13 @@ export default function Hero() {
             className="text-5xl sm:text-7xl lg:text-8xl font-bold tracking-tight mb-4 leading-none"
             style={{ color: "var(--color-text)" }}
           >
-            Brett T.
+            Brett Toutkoushian
           </h1>
         </motion.div>
 
         {/* Subtitle */}
         <motion.div
-          custom={2}
+          custom={1}
           variants={fadeUp}
           initial="hidden"
           animate="visible"
@@ -78,7 +57,7 @@ export default function Hero() {
 
         {/* Tagline */}
         <motion.div
-          custom={3}
+          custom={2}
           variants={fadeUp}
           initial="hidden"
           animate="visible"
@@ -87,13 +66,13 @@ export default function Hero() {
             className="text-base sm:text-lg max-w-2xl mx-auto mb-10 leading-relaxed"
             style={{ color: "var(--color-text-muted)" }}
           >
-            I build backend systems and the tools that keep them working. Recent CS grad looking for my next engineering role.
+            Three years building backend systems and automation tooling in production. Open to backend engineering roles.
           </p>
         </motion.div>
 
         {/* CTAs */}
         <motion.div
-          custom={4}
+          custom={3}
           variants={fadeUp}
           initial="hidden"
           animate="visible"
@@ -102,14 +81,14 @@ export default function Hero() {
           <HeroPrimaryButton href="#projects">
             View Projects
           </HeroPrimaryButton>
-          <HeroSecondaryButton href="/resume.pdf" download>
-            Download Resume
+          <HeroSecondaryButton href="/resume.pdf" target="_blank">
+            View Resume
           </HeroSecondaryButton>
         </motion.div>
 
         {/* Scroll indicator */}
         <motion.div
-          custom={5}
+          custom={4}
           variants={fadeUp}
           initial="hidden"
           animate="visible"
@@ -167,17 +146,18 @@ function HeroPrimaryButton({
 
 function HeroSecondaryButton({
   href,
-  download,
+  target,
   children,
 }: {
   href: string;
-  download?: boolean;
+  target?: string;
   children: React.ReactNode;
 }) {
   return (
     <a
       href={href}
-      download={download}
+      target={target}
+      rel={target === "_blank" ? "noopener noreferrer" : undefined}
       className="px-8 py-3.5 text-sm font-semibold border transition-all duration-300 hover:scale-105"
       style={{
         color: "var(--color-text)",

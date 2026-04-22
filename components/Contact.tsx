@@ -6,9 +6,9 @@ const contactLinks = [
   {
     id: "email",
     label: "Email",
-    value: "btouts2000@gmail.com",
-    href: "mailto:btouts2000@gmail.com",
-    display: "btouts2000@gmail.com",
+    value: "btouts2000+portfolio@gmail.com",
+    href: "mailto:btouts2000+portfolio@gmail.com",
+    display: "btouts2000+portfolio@gmail.com",
     icon: EmailIcon,
   },
   {
